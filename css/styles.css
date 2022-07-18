@@ -29,17 +29,16 @@ a {
 }
 
 .section {
-  width: 1600px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .header {
-  padding: 80px 0;
   border-bottom: 1px solid #ffffff;
+}
+
+.header-nd {
+  border-bottom: 1px solid #ececec;
 }
 
 .conteiner {
@@ -171,11 +170,11 @@ a {
 
 .hero {
   background-color: #2f303a;
+  padding: 200px 0;
 }
 
 .hero-title {
   width: 696px;
-  height: 120px;
 
   font-weight: 900;
   font-size: 44px;
@@ -184,11 +183,9 @@ a {
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
-
-  margin-right: 423px;
-  margin-left: 423px;
-  margin-top: 200px;
   margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero-btn {
@@ -209,32 +206,23 @@ a {
   border-radius: 4px;
   cursor: pointer;
 
-  margin-bottom: 200px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.hero-item {
   margin-right: auto;
   margin-left: auto;
 }
 
 /* Особености */
 
-.feature-section {
-  width: 1170px;
-  height: 101px;
+.section.features {
+  padding-bottom: 0;
 }
 
 .card-set {
   display: flex;
-  gap: 30px;
+  gap: var(--indent);
 }
 
 .list-item {
-  width: 270px;
-  height: 101px;
-  flex-basis: calc((100% - (var(--indent) * var(--items) - 1)) / var(--items));
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
 .item-heading {
@@ -274,7 +262,7 @@ a {
 .pics-item {
   display: flex;
   gap: 30px;
-  flex-basis: calc((100% - (var(--indent) * var(--items) - 1)) / var(--items));
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
 .pics-box {
@@ -292,13 +280,17 @@ a {
   gap: 30px;
 }
 
+.work-list {
+  --item: 4;
+}
+
 .about-people {
-  width: 270px;
-  height: 368px;
+  flex-basis: calc((100% - var(--indent) * (var(--item) - 1)) / var(--item));
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
 }
 
 .people-img {
@@ -340,10 +332,11 @@ a {
   justify-content: center;
 
   gap: 8px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .portfolio-btn {
+  padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -354,8 +347,7 @@ a {
   background-color: #f5f4fa;
   border-radius: 4px;
   cursor: pointer;
-  width: 145px;
-  height: 38px;
+
   border: #f5f4fa;
 }
 
@@ -379,7 +371,6 @@ a {
 
 .portfolio-img {
   display: block;
-  margin-bottom: 20px;
 }
 
 .portfolio-link {
@@ -392,13 +383,7 @@ a {
 }
 
 .portfolio-item {
-  box-sizing: border-box;
-  width: 370px;
-  height: 404px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-
-  flex-basis: calc((100% - (var(--indent) * var(--items) - 1)) / var(--items));
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
 .list-name {
@@ -408,10 +393,6 @@ a {
   letter-spacing: 0.06em;
   color: #212121;
   margin-bottom: 4px;
-
-  width: 322px;
-  height: 36px;
-  margin-left: 20px;
 }
 
 .list-project {
@@ -419,15 +400,18 @@ a {
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: #757575;
+}
 
-  width: 322px;
-  height: 30px;
-  margin-left: 20px;
+.portfolio-wrap {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 /* footer */
 
 .footer {
+  padding: 60px 0;
   background-color: #2f303a;
 }
 
@@ -467,17 +451,10 @@ a {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   display: block;
-  margin-bottom: 9px;
 }
 
-.address-mail {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-  display: block;
-  margin-bottom: 9px;
+.not-last-child:nth-child(2) {
+  margin: 9px 0;
 }
 
 .visually-hidden {

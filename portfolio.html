@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="body">
-    <header class="header">
+    <header class="header-nd">
       <div class="conteiner header-conteiner">
         <a class="logo" href=""><span class="logo-span">Web</span>Studio</a>
         <nav class="header-nav">
@@ -84,8 +84,10 @@
                 width="370"
                 height="294"
               />
-              <h2 class="list-name">Технокряк</h2>
-              <p class="list-project">Веб-сайт</p>
+              <div class="portfolio-wrap">
+                <h2 class="list-name">Технокряк</h2>
+                <p class="list-project">Веб-сайт</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -95,10 +97,12 @@
                 width="370"
                 height="294"
               />
-              <h2 class="list-name">
-                Постер<span lang="en"> New Orlean vs Golden Star</span>
-              </h2>
-              <p class="list-project">Дизайн</p>
+              <div class="portfolio-wrap">
+                <h2 class="list-name">
+                  Постер<span lang="en"> New Orlean vs Golden Star</span>
+                </h2>
+                <p class="list-project">Дизайн</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -108,8 +112,12 @@
                 width="370"
                 height="294"
               />
-              <h2 class="list-name">Ресторан <span lang="en">Seafood</span></h2>
-              <p class="list-project">Приложение</p>
+              <div class="portfolio-wrap">
+                <h2 class="list-name">
+                  Ресторан <span lang="en">Seafood</span>
+                </h2>
+                <p class="list-project">Приложение</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -119,8 +127,10 @@
                 width="370"
                 height="294"
               />
-              <h2 class="list-name">Проект <span lang="en">Prime</span></h2>
-              <p class="list-project">Маркетинг</p>
+              <div class="portfolio-wrap">
+                <h2 class="list-name">Проект <span lang="en">Prime</span></h2>
+                <p class="list-project">Маркетинг</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -130,8 +140,10 @@
                 width="370"
                 height="294"
               />
-              <h2 class="list-name">Проект <span lang="en"> Boxes</span></h2>
-              <p class="list-project">Приложение</p>
+              <div class="portfolio-wrap">
+                <h2 class="list-name">Проект <span lang="en"> Boxes</span></h2>
+                <p class="list-project">Приложение</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -141,8 +153,10 @@
                 width="370"
                 height="294"
               />
-              <h2 class="list-name" lang="en">Inspiration has no Borders</h2>
-              <p class="list-project">Веб-сайт</p>
+              <div class="portfolio-wrap">
+                <h2 class="list-name" lang="en">Inspiration has no Borders</h2>
+                <p class="list-project">Веб-сайт</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -152,10 +166,12 @@
                 width="370"
                 height="294"
               />
-              <h2 class="list-name">
-                Издание <span lang="en">Limited Edition</span>
-              </h2>
-              <p class="list-project">Дизайн</p>
+              <div class="portfolio-wrap">
+                <h2 class="list-name">
+                  Издание <span lang="en">Limited Edition</span>
+                </h2>
+                <p class="list-project">Дизайн</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -165,8 +181,10 @@
                 width="370"
                 height="294"
               />
-              <h2 class="list-name">Проект <span lang="en">LAB</span></h2>
-              <p class="list-project">Маркетинг</p>
+              <div class="portfolio-wrap">
+                <h2 class="list-name">Проект <span lang="en">LAB</span></h2>
+                <p class="list-project">Маркетинг</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -176,8 +194,10 @@
                 width="370"
                 height="294"
               />
-              <h2 class="list-name" lang="en">Growing Business</h2>
-              <p class="list-project">Приложение</p>
+              <div class="portfolio-wrap">
+                <h2 class="list-name" lang="en">Growing Business</h2>
+                <p class="list-project">Приложение</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -185,24 +205,26 @@
     </main>
 
     <footer class="footer">
-      <a class="logo-footer" href=""
-        ><span class="logo-span">Web</span>Studio</a
-      >
-      <address class="address">
-        <ul>
-          <li class="residence-address">г. Киев, пр-т Леси Украинки, 26</li>
-          <li>
-            <a class="address-mail-tel" href="mailto:info@example.com"
-              >info@example.com</a
-            >
-          </li>
-          <li>
-            <a class="address-mail-tel" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="conteiner">
+        <a class="logo-footer" href=""
+          ><span class="logo-span">Web</span>Studio</a
+        >
+        <address class="address">
+          <ul class="address-list">
+            <li class="residence-address">г. Киев, пр-т Леси Украинки, 26</li>
+            <li class="not-last-child">
+              <a class="address-mail-tel" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li class="not-last-child">
+              <a class="address-mail-tel" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
